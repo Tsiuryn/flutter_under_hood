@@ -7,6 +7,9 @@ description: A high-level overview of the architecture of Flutter, including the
 
 [Google](https://www.google.by/).
 
+
+![Ru](https://raw.githubusercontent.com/Tsiuryn/flutter_under_hood/master/assets/icons/archDiagram.png)
+
 This article is intended to provide a high-level overview of the architecture of
 Flutter, including the core principles and concepts that form its design.
 

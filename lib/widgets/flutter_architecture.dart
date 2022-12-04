@@ -27,10 +27,20 @@ class FlutterArchitecture extends StatelessWidget {
       builder: (context, snapshot) {
         if (snapshot.hasData) {
           return Markdown(
-            data: snapshot.data ?? '',
-            onTapLink: _onTapLink,
-              styleSheet: MarkdownStyleSheet(code: TextStyle(fontWeight: FontWeight.bold, fontSize: 32))
-          );
+              data: snapshot.data ?? '',
+              onTapLink: _onTapLink,
+              styleSheet: MarkdownStyleSheet(
+                code: TextStyle(
+                  fontWeight: FontWeight.w500,
+                  color: Colors.green,
+                  backgroundColor: Colors.transparent,
+                ),
+                codeblockDecoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(16),
+                  color: Colors.grey[200],
+                ),
+
+              ));
         } else {
           return Center(
             child: CircularProgressIndicator(),
